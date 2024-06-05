@@ -1,0 +1,18 @@
+.sidebar {
+  width: 264px;
+  height: max-content;
+  flex-shrink: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #cfcfe4;
+  border-radius: 18px;
+  &__item {
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    &.active {
+      background-color: #5fbf77;
+      color: #fff;
+    }
+  }
+}
