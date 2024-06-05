@@ -1,6 +1,8 @@
 import { FC, useEffect, useState } from "react";
+
 import { Content, Sidebar } from "../components";
 import { ICourse } from "../types/types";
+import { getCourses } from "../api/courses";
 
 import "./Courses.scss";
 
@@ -11,15 +13,13 @@ const Courses: FC = () => {
 
   useEffect(() => {
     fetchCourses();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const fetchCourses = async () => {
-    const response = await fetch(
-      "https://logiclike.com/docs/courses.json"
-    ).then((response) => response.json());
-
-    if (response && response.length !== 0) {
-      convertData(response);
+    const data = await getCourses();
+    if (data && data.length !== 0) {
+      convertData(data);
     }
   };
 
