@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d847ddc.css",
-    "main.js": "/static/js/main.481d6a15.js",
-    "index.html": "/index.html",
-    "main.7d847ddc.css.map": "/static/css/main.7d847ddc.css.map",
-    "main.481d6a15.js.map": "/static/js/main.481d6a15.js.map"
+    "main.css": "/logiclike-test/static/css/main.7d847ddc.css",
+    "main.js": "/logiclike-test/static/js/main.481d6a15.js",
+    "index.html": "/logiclike-test/index.html",
+    "main.7d847ddc.css.map": "/logiclike-test/static/css/main.7d847ddc.css.map",
+    "main.481d6a15.js.map": "/logiclike-test/static/js/main.481d6a15.js.map"
   },
   "entrypoints": [
     "static/css/main.7d847ddc.css",
